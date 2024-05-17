@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('surat', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_jenis_surat')->constrained('jenis_surat')->onDelete();
+            $table->foreignId('id_jenis_surat')->constrained('jenis_surat')->onDelete('cascade');
             $table->string('nama_pengirim');
             $table->string('arah_surat');
+            $table->string('no_telepon');
             $table->string('judul_surat');
-            $table->string('nomor_telepon');
             $table->date('tanggal_masuk');
             $table->timestamps();
             $table->softDeletes();
