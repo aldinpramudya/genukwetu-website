@@ -13,7 +13,7 @@ class rwSeeder extends Seeder
     public function run(): void
     {
         DB::table('rw')->insert([
-            'dusun' => 1,
+            'dusun_id' => 1,
             'nomor_rw' => '001',
             'nama_kepala_rw' => 'SISWANTORO',
             'no_handphone' => '085723678132',
