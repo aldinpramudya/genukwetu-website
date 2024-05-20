@@ -13,7 +13,7 @@ class rtSeeder extends Seeder
     public function run(): void
     {
         DB::table('rt')->insert([
-            'rw' => 1, 
+            'rw_id' => 1, 
             'nomor_rt' => '001',
             'nama_kepala_rt' => 'SUPENO',
             'jumlah_pria' => 96,
